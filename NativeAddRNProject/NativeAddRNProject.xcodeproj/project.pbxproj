@@ -132,12 +132,12 @@
 		4104CF7F21A3E4140047E073 /* QSRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				4104CF8421A3E4140047E073 /* QSRefreshControl.h */,
 				4104CF8021A3E4140047E073 /* QSRefreshControl.m */,
 				4104CF8121A3E4140047E073 /* QSRefreshControlManager.h */,
+				4104CF8521A3E4140047E073 /* QSRefreshControlManager.m */,
 				4104CF8221A3E4140047E073 /* QSRefreshMotionProtocol.h */,
 				4104CF8321A3E4140047E073 /* RCTScrollView+QSRefresh.h */,
-				4104CF8421A3E4140047E073 /* QSRefreshControl.h */,
-				4104CF8521A3E4140047E073 /* QSRefreshControlManager.m */,
 				4104CF8621A3E4140047E073 /* RCTScrollView+QSRefresh.m */,
 			);
 			path = QSRefreshControl;

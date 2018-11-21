@@ -13,8 +13,6 @@ import {
 import MyRefreshControl from './MyRefreshView';
 const {width: screenWidth, height: screenHeight} = Dimensions.get('window');
 var ITEM_HEIGHT = 100;
-// const MyRefresh = requireNativeComponent('AlaleiRefreshControl');
-var MyRefresh = NativeModules.AlaleiRefreshControl;
 export default class demo extends Component {
     dataSource = [];
     constructor(props) {

@@ -53,7 +53,7 @@ export default class LoadMoreDemo extends Component {
 
                 this.setState({
                     //复制数据源
-                    dataArray:this.state.dataArray.concat(dataBlob),
+                    dataArray:pageNo == 1 ? this.state.dataArray = dataBlob  : this.state.dataArray.concat(dataBlob) ,
                     isLoading: false,
                     showFoot:foot,
                     isRefreshing:false,
@@ -94,7 +94,7 @@ export default class LoadMoreDemo extends Component {
             <View style={styles.container}>
                 <ActivityIndicator
                     animating={true}
-                    color='red'
+                    color='black'
                     size="large"
                 />
             </View>

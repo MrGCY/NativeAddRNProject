@@ -5,7 +5,6 @@ import { requireNativeComponent} from 'react-native';
 // export  default  requireNativeComponent('AlaleiRefreshControl', 'MyRefreshControl');
 //第二种
 var MyRefresh = requireNativeComponent('AlaleiRefreshControl', MyRefreshControl);
-
 export default class MyRefreshControl extends Component {
     render() {
         return (
