@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G00-76-bTN">
+                                <rect key="frame" x="139.5" y="120" width="96" height="30"/>
+                                <state key="normal" title="进入RN-1页面"/>
+                                <connections>
+                                    <action selector="clickEnterRN1Event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJJ-jM-4vE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVT-jJ-FuG">
+                                <rect key="frame" x="138.5" y="170" width="98" height="30"/>
+                                <state key="normal" title="进入RN-2页面"/>
+                                <connections>
+                                    <action selector="clickEnterRN2Event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mFp-NC-uUs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDA-nK-9l3">
+                                <rect key="frame" x="138.5" y="220" width="98" height="30"/>
+                                <state key="normal" title="进入RN-3页面"/>
+                                <connections>
+                                    <action selector="clickEnterRN3Event:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v64-Ru-S2L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iDA-nK-9l3" firstAttribute="top" secondItem="DVT-jJ-FuG" secondAttribute="bottom" constant="20" id="7ZF-kj-uvT"/>
+                            <constraint firstItem="DVT-jJ-FuG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXc-Vd-jPI"/>
+                            <constraint firstItem="DVT-jJ-FuG" firstAttribute="top" secondItem="G00-76-bTN" secondAttribute="bottom" constant="20" id="Bz4-IW-fMl"/>
+                            <constraint firstItem="G00-76-bTN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="Qnj-ys-KY2"/>
+                            <constraint firstItem="iDA-nK-9l3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vmq-Uk-91f"/>
+                            <constraint firstItem="G00-76-bTN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgL-uG-r7f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

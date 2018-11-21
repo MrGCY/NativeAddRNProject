@@ -1,0 +1,14 @@
+{
+	"name": "nativeAddRN",
+	"version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-ios-rel": "react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios_react_native_rel/index.ios.jsbundle --assets-dest ios_react_native_rel/"
+  },
+  "dependencies": {
+    "react-native": "^0.57.5",
+    "react":"^16.6.1",
+    "scheduler":"0.11.2"
+  }
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CYMainViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kr-au-QIm">
+                    <rect key="frame" x="139.5" y="120" width="96" height="30"/>
+                    <state key="normal" title="进入RN-1页面"/>
+                    <connections>
+                        <action selector="clickEnterRN1Event:" destination="-1" eventType="touchUpInside" id="rCn-8r-x7J"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6e-ur-1Ka">
+                    <rect key="frame" x="138.5" y="170" width="98" height="30"/>
+                    <state key="normal" title="进入RN-2页面"/>
+                    <connections>
+                        <action selector="clickEnterRN2Event:" destination="-1" eventType="touchUpInside" id="xcM-GY-q86"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XqM-34-Pjl">
+                    <rect key="frame" x="138.5" y="220" width="98" height="30"/>
+                    <state key="normal" title="进入RN-3页面"/>
+                    <connections>
+                        <action selector="clickEnterRN3Event:" destination="-1" eventType="touchUpInside" id="HDV-ka-Efk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gl-lZ-itP">
+                    <rect key="frame" x="143.5" y="270" width="88" height="30"/>
+                    <state key="normal" title="进入app页面"/>
+                    <connections>
+                        <action selector="clickEnterAppEvent:" destination="-1" eventType="touchUpInside" id="XjJ-bM-2cf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a6e-ur-1Ka" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FQ8-q2-Qon"/>
+                <constraint firstItem="1gl-lZ-itP" firstAttribute="top" secondItem="XqM-34-Pjl" secondAttribute="bottom" constant="20" id="NZM-td-2jJ"/>
+                <constraint firstItem="1kr-au-QIm" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="WS7-0I-qpa"/>
+                <constraint firstItem="XqM-34-Pjl" firstAttribute="top" secondItem="a6e-ur-1Ka" secondAttribute="bottom" constant="20" id="dMZ-yX-kZG"/>
+                <constraint firstItem="a6e-ur-1Ka" firstAttribute="top" secondItem="1kr-au-QIm" secondAttribute="bottom" constant="20" id="i2k-0T-hQQ"/>
+                <constraint firstItem="1kr-au-QIm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lhi-Rn-bax"/>
+                <constraint firstItem="1gl-lZ-itP" firstAttribute="centerX" secondItem="XqM-34-Pjl" secondAttribute="centerX" id="wKd-iD-7wY"/>
+                <constraint firstItem="XqM-34-Pjl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="x5Z-P1-nAM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
